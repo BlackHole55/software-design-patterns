@@ -1,7 +1,7 @@
 public class Director {
 
     public void buildCause(MusicBuilder builder) {
-        builder.reset();
+        builder.newProduct();
         builder.setTitle("Cause")
                 .setAuthor("Rodriguez")
                 .setAlbum("Coming From Reality")

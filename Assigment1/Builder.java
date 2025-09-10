@@ -1,5 +1,5 @@
 interface Builder {
-    void reset();
+    void newProduct();
     MusicBuilder setTitle(String title);
     MusicBuilder setAuthor(String author);
     MusicBuilder setAlbum(String album);

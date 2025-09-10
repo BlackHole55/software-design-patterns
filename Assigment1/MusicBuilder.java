@@ -2,10 +2,10 @@ class MusicBuilder implements Builder {
     private Music music;
 
     public MusicBuilder() {
-        this.reset();
+        this.newProduct();
     }
 
-    public void reset() {
+    public void newProduct() {
         this.music = new Music();
     }
 
@@ -36,7 +36,7 @@ class MusicBuilder implements Builder {
 
     public Music getProduct() {
         Music product = this.music;
-        this.reset();
+        this.newProduct();
         return product;
     }
 }

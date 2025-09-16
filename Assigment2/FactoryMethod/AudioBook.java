@@ -39,8 +39,8 @@ class AudioBook implements IAudio {
         this.pubDate = pubDate;
     }
 
-    public String play() {
-        return "Playing: " + this.title;
+    public void play() {
+        System.out.println("Playing: " + this.title);
     }
 
     @Override

@@ -49,6 +49,10 @@ class Music implements IAudio {
         this.pubDate = pubDate;
     }
 
+    public String play() {
+        return "Playing: " + this.title;
+    }
+
     @Override
     public String toString() {
         return "Title: " + this.title + 

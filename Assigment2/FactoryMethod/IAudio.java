@@ -10,4 +10,6 @@ interface IAudio {
 
     public String getPubDate();
     public void setPubDate(String pubDate);
+
+    public String play();
 }

@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class AudioBookMetadata {
+public class AudioBookMetadata implements IMetadata {
     private int durationSec;
     private String pubDate;
 

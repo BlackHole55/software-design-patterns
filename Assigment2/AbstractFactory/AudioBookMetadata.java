@@ -1,0 +1,27 @@
+package AbstractFactory;
+
+public class AudioBookMetadata {
+    private int durationSec;
+    private String pubDate;
+
+    public int getDurationSec() {
+        return this.durationSec;
+    }
+
+    public void setDurationSec(int durationSec) {
+        this.durationSec = durationSec;
+    }
+
+    public String getPubDate() {
+        return this.pubDate;
+    }
+
+    public void setPubDate(String pubDate) {
+        this.pubDate = pubDate;
+    }
+
+    public String info() {
+        return "Duration(Seconds): " + this.durationSec +
+                "\nPublication Date: " + this.pubDate;
+    }
+}

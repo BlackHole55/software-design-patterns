@@ -11,5 +11,5 @@ interface IAudio {
     public String getPubDate();
     public void setPubDate(String pubDate);
 
-    public void play();
+    public void whatThis();
 }

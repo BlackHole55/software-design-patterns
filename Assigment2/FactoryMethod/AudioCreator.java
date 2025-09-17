@@ -1,8 +1,8 @@
 abstract class AudioCreator {
     public abstract IAudio createAudio();
 
-    public void playAudio() {
+    public void whatThisCreator() {
         IAudio audio = createAudio();
-        audio.play();
+        audio.whatThis();
     }
 }

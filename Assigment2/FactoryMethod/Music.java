@@ -23,13 +23,13 @@ class Music implements IAudio {
     }
 
     
-    public String getAlbum() {
-        return this.album;
-    }
+    // public String getAlbum() {
+    //     return this.album;
+    // }
 
-    public void setAlbum(String album) {
-        this.album = album;
-    }
+    // public void setAlbum(String album) {
+    //     this.album = album;
+    // }
 
     
     public int getDurationSec() {
@@ -49,8 +49,8 @@ class Music implements IAudio {
         this.pubDate = pubDate;
     }
 
-    public void play() {
-        System.out.println("Playing: " + this.title);
+    public void whatThis() {
+        System.out.println("It's instance of Music");
     }
 
     @Override

@@ -5,6 +5,12 @@ public class MusicMetadata implements IMetadata {
     private int durationSec;
     private String pubDate;
 
+    public MusicMetadata(String album, int durationSec, String pubDate) {
+        this.album = album;
+        this.durationSec = durationSec;
+        this.pubDate = pubDate;
+    }
+
     public String getAlbum() {
         return this.album;
     }

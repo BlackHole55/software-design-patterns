@@ -4,6 +4,11 @@ class MusicTrack implements IAudioContent {
     private String title;
     private String author;
 
+    public MusicTrack(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
     public String getTitle() {
         return this.title;
     }
@@ -22,7 +27,7 @@ class MusicTrack implements IAudioContent {
     }
     
 
-    public String play() {
-        return "Playing: " + this.title + " by " + this.author;
+    public void play() {
+        System.out.println("Playing: " + this.title + " by " + this.author);
     }
 }

@@ -1,5 +1,5 @@
 package AbstractFactory;
 
 interface IAudioContent {
-    public String play();
+    public void play();
 }

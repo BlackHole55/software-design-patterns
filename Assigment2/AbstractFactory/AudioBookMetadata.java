@@ -25,8 +25,10 @@ public class AudioBookMetadata implements IMetadata {
         this.pubDate = pubDate;
     }
 
-    public String info() {
-        return "Duration(Seconds): " + this.durationSec +
-                "\nPublication Date: " + this.pubDate;
+    public void info() {
+        System.out.println(
+            "Duration(Seconds): " + this.durationSec + 
+            "\nPublication Date: " + this.pubDate
+        ); 
     }
 }

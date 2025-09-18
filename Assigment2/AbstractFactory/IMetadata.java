@@ -1,5 +1,5 @@
 package AbstractFactory;
 
 interface IMetadata {
-    public String info();
+    public void info();
 }

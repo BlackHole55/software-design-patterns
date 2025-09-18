@@ -36,9 +36,11 @@ public class MusicMetadata implements IMetadata {
         this.pubDate = pubDate;
     }
 
-    public String info() {
-        return "Album: " + this.album +
-                "\nDuration(Seconds): " + this.durationSec +
-                "\nPublication Date: " + this.pubDate;
+    public void info() {
+        System.out.println(
+            "Album: " + this.album +
+            "\nDuration(Seconds): " + this.durationSec +
+            "\nPublication Date: " + this.pubDate
+        );
     }
 }

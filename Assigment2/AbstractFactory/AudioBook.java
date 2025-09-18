@@ -5,6 +5,12 @@ class AudioBook implements IAudioContent {
     private String author;
     private String narrator;
 
+    public AudioBook(String title, String author, String narrator) {
+        this.title = title;
+        this.author = author;
+        this.narrator = narrator;
+    }
+
     public String getTitle() {
         return this.title;
     }
@@ -31,7 +37,7 @@ class AudioBook implements IAudioContent {
         this.narrator = narrator;
     }
 
-    public String play() {
-        return "Playing: " + this.title + " by " + this.author + ", narrated by " + this.narrator;
+    public void play() {
+        System.out.println("Playing: " + this.title + " by " + this.author + ", narrated by " + this.narrator);
     }
 }

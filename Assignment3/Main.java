@@ -11,5 +11,8 @@ public class Main {
 
         MusicAdapter musicAdapter2 = new MusicAdapter();
         musicAdapter2.play("Bird's Lament - Moondog");
+
+        AudiobookAdapter audiobookAdapter2 = new AudiobookAdapter();
+        audiobookAdapter2.play("To Kill a Mockingbird - Harper Lee");
     }
 }

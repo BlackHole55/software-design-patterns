@@ -12,7 +12,9 @@ public class MediaAdapter implements IMediaPlayer {
     @Override
     public void play(String file) {
         if (adaptee instanceof MusicPlayer) {
-            ((MusicPlayer) adaptee).playSong(file);
+            String delimiter = "-";
+            String[] songInfo = file.split(delimiter);
+            ((MusicPlayer) adaptee).playSong(songInfo[0].trim(), songInfo[1].trim());
         } else if (adaptee instanceof AudiobookPlayer) {
             ((AudiobookPlayer) adaptee).narrate(file);
         }

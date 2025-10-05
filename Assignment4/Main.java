@@ -21,5 +21,10 @@ class Main {
         BasicPlayer basicAudiobookPlayer = new BasicPlayer(littlePrince);
         basicAudiobookPlayer.play();
         System.out.println(basicAudiobookPlayer.getInfo());
+
+        AdvancedPlayer advancedPlayer = new AdvancedPlayer(wheresYourHeadAt);
+        advancedPlayer.play();
+        advancedPlayer.changeAudio(littlePrince);
+        advancedPlayer.play();
     }    
 }

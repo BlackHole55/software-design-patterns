@@ -12,4 +12,8 @@ class BasicPlayer implements IPlayer {
     public void play() {
         audioMedia.play();
     }
+
+    public void setAudioMedia(IAudioMedia audioMedia) {
+        this.audioMedia = audioMedia;
+    }
 }

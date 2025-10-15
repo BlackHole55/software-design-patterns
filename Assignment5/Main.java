@@ -7,10 +7,14 @@ public class Main {
 
         System.out.println(voiceControlRobotVacuum.enable());
 
-        
-        DeviceFacade deviceFacade = new DeviceFacade();
-        IDevice voiceControlRobotVacuum2 = deviceFacade.createVoiceControlRobotVacuum();
+        SmartCamera smartCamera = new SmartCamera();
+        RemoteControlDecorator remoteControlCamera = new RemoteControlDecorator(smartCamera);
 
-        System.out.print(voiceControlRobotVacuum2.enable());
+        System.out.println(remoteControlCamera.enable());
+
+        DeviceFacade deviceFacade = new DeviceFacade();
+
+        deviceFacade.leaveHome();
+        deviceFacade.comeHome();
     }
 }

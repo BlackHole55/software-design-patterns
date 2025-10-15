@@ -7,11 +7,11 @@ public class VoiceControlDecorator extends DeviceDecorator {
 
     @Override
     public String enable() {
-        return super.enable() + " (enabled through voice command)";
+        return super.enable() + " (Enabled through voice command)";
     }
 
     @Override
     public String disable() {
-        return super.disable() + " (disabled through voice command)";
+        return super.disable() + " (Disabled through voice command)";
     }
 }

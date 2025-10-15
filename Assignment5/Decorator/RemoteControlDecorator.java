@@ -1,4 +1,6 @@
-package Assignment5;
+package Assignment5.Decorator;
+
+import Assignment5.IDevice;
 
 public class RemoteControlDecorator extends DeviceDecorator{
     public RemoteControlDecorator(IDevice device) {

@@ -1,7 +1,6 @@
 package Assignment5;
 
-class RobotVacuum implements IDevice {
-
+public class RobotVacuum implements IDevice {
     @Override
     public String enable() {
         return "Start cleaning"; 

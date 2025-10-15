@@ -1,4 +1,7 @@
-package Assignment5;
+package Assignment5.Facade;
+
+import Assignment5.RobotVacuum;
+import Assignment5.SmartCamera;
 
 public class DeviceFacade {
     private RobotVacuum robotVacuum = new RobotVacuum();

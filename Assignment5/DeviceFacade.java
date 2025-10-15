@@ -1,10 +1,16 @@
 package Assignment5;
 
 public class DeviceFacade {
-    public IDevice createVoiceControlRobotVacuum() {
-        RobotVacuum robotVacuum = new RobotVacuum();
-        VoiceControlDecorator voiceControlRobotVacuum = new VoiceControlDecorator(robotVacuum);
-        
-        return voiceControlRobotVacuum;
+    private RobotVacuum robotVacuum = new RobotVacuum();
+    private SmartCamera smartCamera = new SmartCamera();
+
+    public void comeHome() {
+        System.out.println(robotVacuum.disable());
+        System.out.println(smartCamera.disable());
     }
+
+    public void leaveHome() {
+        System.out.println(robotVacuum.enable());
+        System.out.println(smartCamera.enable());
+    } 
 }

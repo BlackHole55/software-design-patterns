@@ -3,7 +3,7 @@ package Assignment5.Decorator;
 import Assignment5.IDevice;
 
 public class DeviceDecorator implements IDevice {
-    IDevice device;
+    private IDevice device;
 
     public DeviceDecorator(IDevice device) {
         this.device = device;

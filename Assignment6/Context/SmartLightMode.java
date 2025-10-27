@@ -14,6 +14,6 @@ public class SmartLightMode {
     }
 
     public void applyLightingMode() {
-        this.lightingMode.adjust_light();
+        this.lightingMode.adjustLight();
     }
 }

@@ -14,7 +14,7 @@ public class ReadingMode implements LightingMode{
     }
 
     @Override
-    public void adjust_light() {
+    public void adjustLight() {
         System.out.println(message);
     }
 }

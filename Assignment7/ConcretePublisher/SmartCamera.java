@@ -1,13 +1,13 @@
 package Assignment7.ConcretePublisher;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 import Assignment7.Publisher.IPublisher;
 import Assignment7.Subscriber.ISubscriber;
 
 public class SmartCamera implements IPublisher{
-    private ArrayList<ISubscriber> subscribers = new ArrayList<>();
+    private HashSet<ISubscriber> subscribers = new HashSet<>();
     private HashMap<String, String> state = new HashMap<>();
     private final String KEY_MISSING_MESSAGE = "No such key, please try another one";
 

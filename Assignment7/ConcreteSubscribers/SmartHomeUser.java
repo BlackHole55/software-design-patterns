@@ -16,7 +16,7 @@ public class SmartHomeUser implements ISubscriber {
 
     @Override
     public void update(HashMap<String, String> state) {
-        this.state = state;
+        this.state = new HashMap<>(state);
     }
 
     public String getState(String key) {

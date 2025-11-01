@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         SmartHeater heaterCelsius1 = new SmartHeater(); 
         
-        heaterCelsius1.setState(StateKeys.TEMPERATURE, "25C");
+        heaterCelsius1.setTemperature(25);
         heaterCelsius1.setState(StateKeys.HUMIDITY, "50%");
         heaterCelsius1.setState(StateKeys.HEATER_STATUS, "On");
 
@@ -27,7 +27,7 @@ public class Main {
         System.out.println(arthurUser.getName() + " { humidity: "+ arthurUser.getState(StateKeys.HUMIDITY) + " }");
         System.out.println(douglasUser.getName() + " { heater status: " + douglasUser.getState(StateKeys.HEATER_STATUS) + " }");
 
-        heaterCelsius1.setState("heaterStatus", "Off");
+        heaterCelsius1.setState(StateKeys.HEATER_STATUS, "Off");
 
         System.out.println(marvinUser.getName() + " { heater status: " + marvinUser.getState(StateKeys.HEATER_STATUS) + " }");
 
@@ -43,6 +43,6 @@ public class Main {
         camera1.setState(StateKeys.MOTION_DETECTED, "True");
 
         System.out.println(secDevice1.getId() + " { camera status: " + secDevice1.getState(StateKeys.CAMERA_STATUS) + " }");
-        System.out.println(arthurUser.getName() + " { mothion detected: " + arthurUser.getState(StateKeys.MOTION_DETECTED) + " }");
+        System.out.println(arthurUser.getName() + " { motion detected: " + arthurUser.getState(StateKeys.MOTION_DETECTED) + " }");
     }
 }
